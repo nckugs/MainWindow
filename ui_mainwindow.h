@@ -29,6 +29,9 @@ public:
     QAction *action_5;
     QAction *action_6;
     QAction *action_8;
+    QAction *actionCopy_C;
+    QAction *actionPaste;
+    QAction *actionCut;
     QWidget *centralwidget;
     QMenuBar *menubar;
     QMenu *menu;
@@ -52,6 +55,12 @@ public:
         action_6->setObjectName(QString::fromUtf8("action_6"));
         action_8 = new QAction(MainWindow);
         action_8->setObjectName(QString::fromUtf8("action_8"));
+        actionCopy_C = new QAction(MainWindow);
+        actionCopy_C->setObjectName(QString::fromUtf8("actionCopy_C"));
+        actionPaste = new QAction(MainWindow);
+        actionPaste->setObjectName(QString::fromUtf8("actionPaste"));
+        actionCut = new QAction(MainWindow);
+        actionCut->setObjectName(QString::fromUtf8("actionCut"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         MainWindow->setCentralWidget(centralwidget);
@@ -77,6 +86,9 @@ public:
         menu->addAction(action_6);
         menu->addSeparator();
         menu->addAction(action_8);
+        menu_2->addAction(actionCopy_C);
+        menu_2->addAction(actionPaste);
+        menu_2->addAction(actionCut);
 
         retranslateUi(MainWindow);
 
@@ -92,6 +104,9 @@ public:
         action_5->setText(QApplication::translate("MainWindow", "\345\204\262\345\255\230", nullptr));
         action_6->setText(QApplication::translate("MainWindow", "\345\217\246\345\255\230", nullptr));
         action_8->setText(QApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
+        actionCopy_C->setText(QApplication::translate("MainWindow", "Copy", nullptr));
+        actionPaste->setText(QApplication::translate("MainWindow", "Paste", nullptr));
+        actionCut->setText(QApplication::translate("MainWindow", "Cut", nullptr));
         menu->setTitle(QApplication::translate("MainWindow", "\346\252\224\346\241\210", nullptr));
         menu_2->setTitle(QApplication::translate("MainWindow", "\347\267\250\350\274\257", nullptr));
     } // retranslateUi

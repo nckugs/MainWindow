@@ -40,6 +40,9 @@
     <property name="title">
      <string>編輯</string>
     </property>
+    <addaction name="actionCopy_C"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionCut"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -73,6 +76,21 @@
   <action name="action_8">
    <property name="text">
     <string>退出</string>
+   </property>
+  </action>
+  <action name="actionCopy_C">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
    </property>
   </action>
  </widget>
